@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinaLink - Calendario Interactivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="Menu.html" class="logo-link">
+            <div class="logo"><img src="logo.png" alt="Logo TecNM" class="logo-img"> MinaLink</div>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <a href="Menu.html">Inicio</a>
+            <a href="avisos.html">Avisos</a>
+            <a href="#" class="active">Calendario</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <div class="mobile-nav-content">
+            <button class="mobile-nav-close" id="mobileNavClose"><i class="fas fa-times"></i></button>
+            <a href="Menu.html">Inicio</a>
+            <a href="avisos.html">Avisos</a>
+            <a href="#" class="active">Calendario</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cal-header">
+            <div class="cal-title">
+                <img src="logo.png" alt="Logo TecNM" class="logo-img"> MinaLink
+            </div>
+            <div class="cal-controls">
+                <span id="current-month" style="font-size: 18px; font-weight: 500;"></span>
+                <div>
+                    <button class="btn-nav" onclick="changeMonth(-1)"><i class="fas fa-chevron-left"></i></button>
+                    <button class="btn-nav" onclick="changeMonth(1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cal-grid" id="calendarGrid">
+        </div>
+    </div>
+
+    <div id="event-panel">
+        <h3 id="panel-date" style="margin-bottom: 15px; color: var(--primary-blue);"></h3>
+        <div id="event-list"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+
+</html>

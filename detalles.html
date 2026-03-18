@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinaLink - Detalle de Convocatoria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #1a3d74;
+            --dark-blue: #0a1f44;
+            --light-blue: #eef2f7;
+            --text-main: #334155;
+            --text-muted: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+
+        /* Navbar Simple */
+        header {
+            background-color: var(--primary-blue);
+            padding: 15px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-img {
+            height: 38px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Contenido del Artículo */
+        .article-container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 25px;
+            transition: 0.3s;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .meta-info {
+            display: flex;
+            gap: 20px;
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: var(--primary-blue);
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .content-body p {
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+
+        /* Cuadro de destacados */
+        .info-box {
+            background-color: var(--light-blue);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            border-left: 5px solid var(--primary-blue);
+        }
+
+        .info-box h3 {
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .btn-action {
+            display: inline-block;
+            background: var(--primary-blue);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn-action:hover {
+            background: var(--dark-blue);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 12px 20px;
+            }
+
+            .logo-img {
+                height: 30px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: clamp(1.4rem, 5vw, 2rem);
+            }
+
+            .hero-image {
+                height: 220px;
+                border-radius: 12px;
+            }
+
+            .article-container {
+                margin: 25px auto;
+                padding: 0 15px;
+            }
+
+            .content-body p {
+                font-size: 15px;
+            }
+
+            .info-box {
+                padding: 20px;
+            }
+
+            .meta-info {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-img {
+                height: 25px;
+            }
+
+            .logo {
+                font-size: 16px;
+            }
+
+            .hero-image {
+                height: 180px;
+            }
+
+            .info-list li {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="Menu.html" class="logo"><img src="logo.png" alt="Logo TecNM" class="logo-img"> MinaLink</a>
+    </header>
+
+    <main class="article-container">
+        <a href="avisos.html" class="back-link"><i class="fas fa-arrow-left"></i> Volver a avisos</a>
+
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200" alt="Becas"
+            class="hero-image">
+
+        <div class="meta-info">
+            <span><i class="far fa-calendar"></i> Publicado: 15 May 2024</span>
+            <span><i class="far fa-user"></i> Por: Departamento Académico</span>
+        </div>
+
+        <h1>Nueva Convocatoria de Becas Académicas 2024</h1>
+
+        <div class="content-body">
+            <p>Se informa a toda la comunidad estudiantil que a partir de la fecha queda abierta la recepción de
+                solicitudes para el programa de <strong>Becas de Excelencia MinaLink</strong> correspondiente al próximo
+                ciclo escolar.</p>
+
+            <p>Este programa busca incentivar el alto desempeño académico y apoyar a los estudiantes que han demostrado
+                un compromiso excepcional con sus estudios y su comunidad. Las becas cubren desde el 50% hasta el 100%
+                de la matrícula.</p>
+
+            <div class="info-box">
+                <h3>Datos Importantes</h3>
+                <ul class="info-list">
+                    <li><i class="fas fa-calendar-check"></i> <strong>Fecha límite:</strong> 30 de Junio, 2024</li>
+                    <li><i class="fas fa-graduation-cap"></i> <strong>Promedio mínimo:</strong> 9.0</li>
+                    <li><i class="fas fa-file-alt"></i> <strong>Modalidad:</strong> Presencial y Online</li>
+                </ul>
+                <a href="#" class="btn-action">Descargar Convocatoria PDF</a>
+            </div>
+
+            <p>Para participar, los interesados deberán subir su documentación completa en el portal del alumno,
+                incluyendo carta de motivos y comprobante de promedio actualizado. No se aceptarán solicitudes
+                extemporáneas.</p>
+        </div>
+    </main>
+
+</body>
+
+</html>

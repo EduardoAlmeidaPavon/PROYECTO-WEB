@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinaLink - Todos los Avisos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="Menu.html" class="logo-link">
+            <div class="logo">
+                <img src="logo.png" alt="Logo TecNM" class="logo-img">
+                <span>MinaLink</span>
+            </div>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <a href="Menu.html">Inicio</a>
+            <a href="avisos.html" class="active">Avisos</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <div class="mobile-nav-content">
+            <button class="mobile-nav-close" id="mobileNavClose"><i class="fas fa-times"></i></button>
+            <a href="Menu.html">Inicio</a>
+            <a href="avisos.html" class="active">Avisos</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <div class="title-section">
+                <h1>Todos los Avisos</h1>
+                <p>Explora la lista completa de noticias y comunicados oficiales.</p>
+            </div>
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar avisos...">
+            </div>
+        </div>
+
+        <div class="grid-avisos">
+            <div class="card">
+                <div class="card-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800');">
+                    <span class="tag-badge">Académico</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Nueva Convocatoria de Becas Académicas 2024</h3>
+                    <p class="card-text">Se informa que ya está disponible la convocatoria para el próximo ciclo
+                        escolar.</p>
+                    <a href="detalles.html" class="btn-more">Saber más &rarr;</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800');">
+                    <span class="tag-badge">Deportes</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Torneo Relámpago de Fútbol Interescolar</h3>
+                    <p class="card-text">¡Prepara tus tenis! Iniciamos el torneo más esperado del año para todas las
+                        categorías.</p>
+                    <a href="detalles.html" class="btn-more">Saber más &rarr;</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=800');">
+                    <span class="tag-badge">Académico</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Resultados del 10° Concurso Ciencias</h3>
+                    <p class="card-text">Felicitamos a los ganadores. Los proyectos serán exhibidos en la biblioteca
+                        central.</p>
+                    <a href="detalles.html" class="btn-more">Saber más &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/mobile-menu.js"></script>
+</body>
+
+</html>
